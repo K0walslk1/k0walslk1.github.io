@@ -27,18 +27,14 @@
 
 <body>
     <div class="fullscreen">
-        <div class="background" style="background-image: url('assets/image/background.jpg');"></div>
+        <div class="background" style="background-image: url('assets/image/background2.jpg');"></div>
         <div class="center-object">
-            <div class="container" id="loader" style="display: block">
-                <section class="me unset">
-                    <div class="loader">Loading...</div>
-                </section>
-            </div>
-            <div class="container" style="display: none" id="page">
+            <div class="container" style="display: block" id="page">
                 <section class="me unset">
                     <img class="image-title" src="assets/image/me.png" draggable="false">
                     <div class="unset">
                         <h1 class="title bold italic">Kowalski#0001</h1>
+                        <span class="undertitle">Mais<span class="txt-rotate undertitle" data-period="2000" data-rotate='["programação", "desenvolvimento", "códigos", "eu na sua vida"]'></span>!</span>
                     </div>
                 </section>
                 <div class="buttons">
@@ -50,16 +46,7 @@
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener('load', function () {
-            const loading = document.getElementById('loader');
-            const page = document.getElementById('page')
-            setTimeout(() => {
-                loading.style.display = 'none'
-                page.style.display = 'block'
-            }, 4000)
-        })
-    </script>
+    <script src="assets/js/effects.js"></script>
 </body>
 
 </html>
