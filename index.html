@@ -1,55 +1,65 @@
 <html>
-    <head>
-        <title>Kowalski</title>
-        <meta name="google-site-verification" content="dc7OKP49auMT0-bPwCzDmV09F-yOB1FL8OsmSw3FZK0" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <!--Open Graph's-->
-        <meta name="theme-color" content="#7289DA">
-        <meta content="https://k0walslk1.github.io/assets/image/me.png" property="og:image" />
-        <link rel="icon" type="image/x-icon" href="assets/image/favicon.png">
-        <meta content="Kowalski#6518" property="og:title" />
 
-        <meta content="Conheça mais sobre mim!" property="og:description" />
-        <meta property="og:url" content="https://k0walslk1.github.io/" />
-        <meta property="og:site_name" content="Kowalski" />
+<head>
+    <title>Kowalski</title>
+    <meta name="google-site-verification" content="dc7OKP49auMT0-bPwCzDmV09F-yOB1FL8OsmSw3FZK0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <!--Open Graph's-->
+    <meta name="theme-color" content="#7289DA">
+    <meta content="https://k0walslk1.github.io/assets/image/me.png" property="og:image" />
+    <link rel="icon" type="image/x-icon" href="assets/image/favicon.png">
+    <meta content="Kowalski#6518" property="og:title" />
 
-        <!-- CSS -->
-        <link href="https://modesta.alexflipnote.dev/css/modesta.min.css" type="text/css" rel="stylesheet">
-        <link href="https://modesta.alexflipnote.dev/css/blobcat.min.css" type="text/css" rel="stylesheet">
-        <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
+    <meta content="Conheça mais sobre mim!" property="og:description" />
+    <meta property="og:url" content="https://k0walslk1.github.io/" />
+    <meta property="og:site_name" content="Kowalski" />
 
-        <!-- JavaScript -->
-        <script src="assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
-    </head>
-    <body>
-        <div class="fullscreen">
-            <div class="background" style="background-image: url('assets/image/background.jpg');"></div>
-            <div class="center-object">
-                <div class="container">
-                    <section class="me">
-                        <img class="image-title" src="assets/image/me.png" draggable="false">
-                        <div class="unset">
-                            <h1 class="title bold italic">Kowalski#6518</h1>
-                        </div>
-                    </section>
-                    <div class="buttons">
-                        <a href="https://github.com/K0walslk1" class="btn animation github">Github</a>
+    <!-- CSS -->
+    <link href="https://modesta.alexflipnote.dev/css/modesta.min.css" type="text/css" rel="stylesheet">
+    <link href="https://modesta.alexflipnote.dev/css/blobcat.min.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="fullscreen">
+        <div class="background" style="background-image: url('assets/image/background.jpg');"></div>
+        <div class="center-object">
+            <div class="container" id="loader" style="display: block">
+                <section class="me unset">
+                    <div class="loader">Loading...</div>
+                </section>
+            </div>
+            <div class="container" style="display: none" id="page">
+                <section class="me unset">
+                    <img class="image-title" src="assets/image/me.png" draggable="false">
+                    <div class="unset">
+                        <h1 class="title bold italic">Kowalski#0001</h1>
                     </div>
+                </section>
+                <div class="buttons">
+                    <a href="https://github.com/iamKowalski" class="btn animation github">Github</a>
+                    <a href="https://www.youtube.com/channel/UCJWQTfZHvG-dMpEeucdgS8g"
+                        class="btn animation youtube">Youtube</a>
+                    <a href="https://twitter.com/iamKowalskii" class="btn animation twitter">Twitter</a>
                 </div>
             </div>
-            <a href="#info"><div id="fade" class="arrow bounce"></div></a>
         </div>
-        <section class="container" id="info">
-            <div class="box-container row">
-                <div class="one-full column"><h1 class="discord-text"> Trabalhos:</h1></div>
-                <div class="one-full column">
-                    <a href="https://kaelbot.fun" class="btn youtube">Kael - Discord Bot</a>
-                    <a href="https://discordapp.com/oauth2/authorize?client_id=554402289259905037&permissions=0&scope=bot" class="btn discord" class="btn amethyst">Alícia - Discord Bot</a>
-                    <a href="https://discordapp.com/oauth2/authorize?client_id=550059322038812673&permissions=0&scope=bot" class="btn discord">Ripper - Discord Bot</a>
-                </div>
-            </div>
-        </section>
-    </body>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            const loading = document.getElementById('loader');
+            const page = document.getElementById('page')
+            setTimeout(() => {
+                loading.style.display = 'none'
+                page.style.display = 'block'
+            }, 4000)
+        })
+    </script>
+</body>
+
 </html>
